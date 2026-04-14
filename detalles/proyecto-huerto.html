@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conoce nuestro huerto</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('https://www.sallejoven.es/wp-content/uploads/2014/03/fondo_sallejoven_arlep1.png');
+            display: flex;
+            justify-content: center;
+        }
+
+        .hoja-central {
+            background-color: white;
+            width: 95%; 
+            max-width: 1450px; 
+            min-height: 100vh; 
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bloque-titulo-centrado {
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+
+        .Titulo-Aumentado {
+            font-size: 80px;
+            font-weight: 900;
+        }
+
+
+        .enlace-boton {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            transition: 0.2s;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        .enlace-boton:hover {
+            background-color:rgb(0, 106, 206);
+            color: white;
+        }
+
+
+        .imagen-centrada {
+            display: block;
+            margin: 0px auto 0 auto;
+            max-width: 55%;
+            height: auto;
+            border-radius: 15px; 
+        }
+        .footer-sencillo {
+        margin-top: 40px;
+        padding: 20px;
+        border-top: 1px solid #000000;
+        font-family: Arial, sans-serif;
+        color: #000000;
+        text-align: center;
+    }
+
+    .footer-sencillo h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .footer-sencillo p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+
+        @media (max-width: 768px) {
+    .hoja-central {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .Titulo-Aumentado {
+        font-size: 40px;
+        word-wrap: break-word;
+    }
+
+    .texto-info {
+        padding: 20px;
+        font-size: 16px;
+    }
+    
+    .texto-info h2 {
+        font-size: 24px !important; 
+    }
+}
+        footer {
+            margin-top: auto; 
+            padding: 20px 0;
+            text-align: center;
+            border-top: 2px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hoja-central">
+        <header class="bloque-titulo-centrado">
+            <h1 class="Titulo-Aumentado">🌱Conoce nuestro huerto🌱</h1>
+        </header>
+        <article>
+            <img class="imagen-centrada" src="https://diario.madrid.es/wp-content/uploads/2025/05/huertos-escolares1-portada-1.jpg" alt="Insertar Imagen">
+        </article>
+        <footer class="footer-sencillo">
+            <h3>Descripción:</h3>
+            <p>Se invita a un centro de educación especial de adultos para de la mano de nuestro alumnado conozcan nuestro huerto y realicen una práctica (plantar una lechuga).</p>
+            
+        </footer>
+        <a href="./../enlaces.html" class="enlace-boton">Volver Atrás</a>
+                <footer>
+            <p style="font-size: 16px;"><strong>DMCA y Copy © 2026</strong></p>
+            <p style="color: #666; font-size: 13px;">Estudiantes de La Salle</p>
+        </footer>
+    </div>
+
+        
+
+</body>
+</html>

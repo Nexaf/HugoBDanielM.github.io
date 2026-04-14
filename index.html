@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acciones Solidarias - Daniel Mateos</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('https://www.sallejoven.es/wp-content/uploads/2014/03/fondo_sallejoven_arlep1.png');
+            display: flex;
+            justify-content: center;
+        }
+
+        .hoja-central {
+            background-color: white;
+            width: 95%; 
+            max-width: 1450px; 
+            min-height: 100vh; 
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bloque-titulo-centrado {
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+
+        .Titulo-Aumentado {
+            font-size: 80px;
+            font-weight: 900;
+        }
+
+        .contenedor-menu-horizontal {
+            display: flex;
+            width: 100%;
+            border: 5px solid black;
+            border-radius: 20px; 
+            margin-bottom: 30px;
+        }
+
+        details {
+            flex: 1;
+            border-right: 5px solid black;
+            position: relative;
+        }
+
+        details:first-child, details:first-child summary {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        details:last-child, details:last-child summary {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-right: none;
+        }
+
+        summary {
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            list-style: none;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: white;
+        }
+
+        summary:hover { background-color: #f8f8f8; }
+        summary::-webkit-details-marker { display: none; }
+
+        .contenido-interno {
+            position: absolute;
+            top: 100%;
+            left: -5px;
+            width: calc(100% + 10px);
+            border: 5px solid black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background-color: #fdfdfd;
+            z-index: 10;
+            border-radius: 20px; 
+        }
+
+        .enlace-boton {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            border: 3px solid black;
+            padding: 10px;
+            text-align: center;
+            transition: 0.2s;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        .enlace-boton:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .texto-info {
+            text-align: left;
+            line-height: 1.8;
+            font-size: 18px;
+            border: 5px solid black;
+            padding: 30px;
+            border-radius: 25px; 
+        }
+
+        .imagen-centrada {
+            display: block;
+            margin: 30px auto 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px; 
+        }
+
+        strong {
+            font-weight: bold;
+            color: red;
+        }
+
+        footer {
+            margin-top: auto; 
+            padding: 20px 0;
+            text-align: center;
+            border-top: 2px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+    .hoja-central {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .Titulo-Aumentado {
+        font-size: 40px;
+        word-wrap: break-word;
+    }
+
+    .texto-info {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .texto-info h2 {
+        font-size: 24px !important; 
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="hoja-central">
+ 
+        <header class="bloque-titulo-centrado">
+            <h1 class="Titulo-Aumentado">𝓐𝓬𝓬𝓲𝓸𝓷𝓮𝓼 𝓢𝓸𝓵𝓲𝓭𝓪𝓻𝓲𝓪𝓼</h1>
+        </header>
+       
+        <article class="texto-info">
+            <h2 style="text-align: center; margin-bottom: 20px; font-size: 30px;">Sobre el Proyecto</h2>
+            <p>
+              En esta página web tenemos las acciones solidarias que realiza La Salle para ayudar a los más necesitados. Aquí podrás encontrar información sobre las diferentes iniciativas, eventos y formas de colaborar con esta causa, además de enlaces a páginas exclusivas donde podras informarte más de cada proyecto que tenga La Salle de forma activa acutualmente. 
+            </p>
+            <p>
+                Para acceder a las páginas exclusivas de cada proyecto, simplemente <strong>haga click en la siguiente imagen</strong> ubicado al fondo de este mismo recuadro donde encontrara los enlaces anteriormente comentados.  
+            </p>
+            <a href="./enlaces.html"><img class="imagen-centrada" src="https://lasalle.cat/wp-content/uploads/solidaritat-suma.png" alt="Imagen de Manos Solidarias"></a>
+        </article>
+
+        <footer>
+            <p style="font-size: 16px;"><strong style="color: black;">DMCA y Copy © 2026</strong></p>
+            <p style="color: #666; font-size: 13px;">Estudiantes de La Salle Institucion</p>
+            <br>
+            <p style="font-size: 16px;">Hecho por: Hugo Bartolome y Daniel Mateos </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enlaces de Proyectos - Acciones Solidarias</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('https://www.sallejoven.es/wp-content/uploads/2014/03/fondo_sallejoven_arlep1.png');
+            display: flex;
+            justify-content: center;
+        }
+
+        .hoja-central {
+            background-color: white;
+            width: 95%; 
+            max-width: 1450px; 
+            min-height: 100vh; 
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bloque-titulo {
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .Titulo-Aumentado {
+            font-size: 60px;
+            font-weight: 900;
+        }
+
+        .contenedor-colegio {
+            margin-bottom: 25px;
+            border: 5px solid black;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .contenedor-colegio:hover {
+            border-color: #3654ff;
+        }
+
+        summary {
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            list-style: none;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 220px; 
+        }
+
+
+        summary img {
+            max-width: 600px;    
+            max-height: 180px;  
+            width: 100%;         
+            height: auto;
+            object-fit: contain; 
+            display: block;
+        }
+
+        .contenedor-enlaces {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 30px;
+            background-color: #fdfdfd;
+            border-top: 5px solid black;
+        }
+
+
+        .tarjeta-enlace {
+            border: 5px solid black;
+            border-radius: 20px; 
+            padding: 25px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            background-color: white;
+        }
+
+        .tarjeta-enlace:hover {
+            border-color: #3654ff;
+        }
+
+        .icono-proyecto {
+            font-size: 40px;
+        }
+
+        .nombre-proyecto {
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .boton-volver {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 10px 30px;
+            border: 3px solid black;
+            border-radius: 10px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            align-self: center;
+        }
+
+        .boton-volver:hover {
+            border-color: red;
+        }
+
+        footer {
+            margin-top: auto; 
+            padding: 20px 0;
+            text-align: center;
+            border-top: 2px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            .Titulo-Aumentado { font-size: 40px; }
+            .hoja-central { padding: 20px; }
+            summary { min-height: 150px; }
+            summary img { max-width: 90%; max-height: 120px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hoja-central">
+
+        <header class="bloque-titulo">
+            <h1 class="Titulo-Aumentado">𝒫𝓇𝑜𝓎𝑒𝒸𝓉𝑜𝓈 𝒜𝒸𝓉𝒾𝓋𝑜𝓈</h1>
+            <p style="font-size: 18px; margin-top: 10px;">Selecciona un colegio para ver sus proyectos</p>
+        </header>
+
+        <details class="contenedor-colegio" name="colegios">
+            <summary>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAbtt6J-gS56tBhxhw3yO58v1JkmZ2WaECSw&s" alt="Los Corrales de Buelna">
+            </summary>
+            <section class="contenedor-enlaces">
+                <a href="./detalles/proyecto-alimentos.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">🍲</span>
+                    <span class="nombre-proyecto">Recogida de Alimentos</span>
+                    <p>Iniciativas de comedores sociales y recogida de alimentos.</p>
+                </a>
+                <a href="./detalles/proyecto-villancico.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">🎅</span>
+                    <span class="nombre-proyecto">Cantar Villancicos</span>
+                    <p>Actividad cultural para celebrar la Navidad.</p>
+                </a>
+                <a href="./detalles/proyecto-bocadillo.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">🥪</span>
+                    <span class="nombre-proyecto">Bocadillo Solidario</span>
+                    <p>Proyecto para proporcionar bocadillos a personas en situación de vulnerabilidad.</p>
+                </a>
+                <a href="./detalles/proyecto-ropa.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">👚</span>
+                    <span class="nombre-proyecto">Recogida de Ropa</span>
+                    <p>Proyecto para recoger y distribuir ropa en situación de vulnerabilidad.</p>
+                </a>
+                <a href="./detalles/proyecto-coches.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">🚗</span>
+                    <span class="nombre-proyecto">Reparación Coches de Compañeros</span>
+                    <p>Proyecto para ofrecer servicios de reparación de coches a miembros de la comunidad.</p>
+                </a>
+            </section>
+        </details>
+
+        <details class="contenedor-colegio" name="colegios">
+            <summary>
+                <img src="https://lasalle.museum/wp-content/uploads/2024/02/MU29AB1.png" alt="La Salle Virgen del Mar">
+            </summary>
+            <section class="contenedor-enlaces">
+                <a href="./detalles/proyecto-juegaterapia.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">🎮</span>
+                    <span class="nombre-proyecto">JUEGATERAPIA</span>
+                    <p>Acompañamiento de pacientes pediatricos.</p>
+                </a>
+                <a href="./detalles/proyecto-alzheimer.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">🧠</span>
+                    <span class="nombre-proyecto">Centro de Día con Alzheimer Jose Bueno</span>
+                    <p>Acompañamiento a pacientes con Alzheimer.</p>
+                </a>
+                <a href="./detalles/proyecto-noche.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">🌟</span>
+                    <span class="nombre-proyecto">Noches con Estrellas</span>
+                    <p>Preparar comidas para personas necesitadas.</p>
+                </a>
+                <a href="./detalles/proyecto-voluntariado.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">🩸</span>
+                    <span class="nombre-proyecto">Campaña Donación de Sangre</span>
+                    <p>Campaña de Donación de Sangre en colegios.</p>
+                </a>
+            </section>
+        </details>
+
+        <details class="contenedor-colegio" name="colegios">
+            <summary>
+                <img src="https://formacionalua.es/wp-content/uploads/2022/12/Marca-La-Salle-Virlecha-scaled.webp" alt="La Salle Virlecha">
+            </summary>
+            <section class="contenedor-enlaces">
+                <a href="./detalles/proyecto-mercadillo.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">💰</span>
+                    <span class="nombre-proyecto">Mercadillo Solidario</span>
+                    <p>Mercadillo Solidario organizado por el colegio.</p>
+                </a>
+                <a href="./detalles/proyecto-tienda.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">🏪</span>
+                    <span class="nombre-proyecto">Tienda Física</span>
+                    <p>Tienda Física en colaboracion con ADIPA.</p>
+                </a>
+                <a href="./detalles/proyecto-parque.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">🏋️‍♀️</span>
+                    <span class="nombre-proyecto">Parque Biosaludable</span>
+                    <p>El alumnado de carrocería construye maquinaria de ejercicios para que sean usadas por personas con discapacidad.</p>
+                </a>
+            </section>
+        </details>
+
+         <details class="contenedor-colegio" name="colegios">
+            <summary>
+                <img src="https://lasallesanasensio.es/wp-content/uploads/2022/07/cropped-La_Salle_La-Estrella-San-Asensio.png" alt="La Salle La Estrella">
+            </summary>
+            <section class="contenedor-enlaces">
+                <a href="./detalles/proyecto-huerto.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">🌱</span>
+                    <span class="nombre-proyecto">Conoce nuestro huerto</span>
+                    <p>Invitación a centro de educacion especial de adultos a nuestro huerto.</p>
+                </a>
+                <a href="./detalles/proyecto-salto.html" class="tarjeta-enlace">
+                    <span class="icono-proyecto">🍸</span>
+                    <span class="nombre-proyecto">"Un gran salto de 72 cm"</span>
+                    <p>Productos recogidos en el huerto usados en hostelería.</p>
+                </a>
+            </section>
+        </details>
+
+        <a href="./index.html" class="boton-volver">← Volver al Inicio</a>
+
+        <footer>
+            <p style="font-size: 16px;"><strong>DMCA y Copy © 2026</strong></p>
+            <p style="color: #666; font-size: 13px;">Estudiantes de La Salle</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
