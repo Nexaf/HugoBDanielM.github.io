@@ -2,7 +2,7 @@
 
 Esta es la página principal del repositorio del trabajo, en el siguiente hiperenlace podemos ver la página web publicada, además poder entrar al respositiorio que está el código de la web publicada en los siguientes enlaces
 
-<a href="https://nexaf.github.io/HugoBDanielM.github.io/">Enlace al Repositorio de la página de github pages</a>
+<a href="https://github.com/Nexaf/HugoBDanielM.github.io">Enlace al Repositorio de la página de github pages</a>
 
 <a href="https://nexaf.github.io/HugoBDanielM.github.io/">Enlace a la página web desde Github Pages</a>
 
